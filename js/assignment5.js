@@ -16,12 +16,7 @@ function showDate() {
 
 showDate();
 
-//   // product-time
-//   const quantityElement=document.querySelectorAll(".product-number")
-//   // console.log(quantityElement);
-//   for(const number of quantityElement){
-//  document.getElementById()
-//   }
+
 
 document
   .getElementById("card-btn1")
