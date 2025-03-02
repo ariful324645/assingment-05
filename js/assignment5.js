@@ -23,7 +23,7 @@ document
     const newValue1 = document.createElement("div");
 
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the task Fix Mobile Button Issue at <span id="clock1"></span> </P>  
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6 "  >You have completed the task Fix Mobile Button Issue at <span id="clock1"></span> </P>  
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
@@ -45,7 +45,7 @@ document
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the task Add Dark Mode at <span id="clock2"></span> </P>   
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6 "  >You have completed the task Add Dark Mode at <span id="clock2"></span> </P>   
 `;
     activity.appendChild(newValue1);
     activity.appendChild(newValue1);
@@ -68,7 +68,7 @@ document
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the task Optimize home page at <span id="clock3"></span> </P>  </P>  
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6 "  >You have completed the task Optimize home page at <span id="clock3"></span> </P>  
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
@@ -90,7 +90,7 @@ document
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the task Add New Emoji at <span id="clock4"></span> </P> 
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6"  >You have completed the task Add New Emoji at <span id="clock4"></span> </P> 
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
@@ -112,7 +112,7 @@ document
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the task Integrate openAI API at <span id="clock5"></span> </P>  
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6 "  >You have completed the task Integrate openAI API at <span id="clock5"></span> </P>  
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
@@ -133,7 +133,7 @@ document
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
-<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 p-10 "  >You have completed the Improve job searching at <span id="clock6"></span> </P> 
+<p id="card-clear" class="bg-gray-300 rounded-lg space-y-6 mt-6 gap-10 px-4 py-6 "  >You have completed the Improve job searching at <span id="clock6"></span> </P> 
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
