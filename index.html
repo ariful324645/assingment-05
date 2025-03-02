@@ -26,12 +26,16 @@
         <div class="flex items-center">
           <div class="flex btn mr-8 rounded-full items-center">
             <img src="assets/checkbox.png" alt="" />
-            <span class="text-2xl font-bold">23</span>
+            <span id="increase-number" class="product-number text-2xl font-bold"
+              >23</span
+            >
           </div>
 
           <div class="btn btn-circle h-14 w-14">
             <div class="w-10 rounded-full">
-              <img src="./assets/theme-btn.png" alt="" />
+              <button id="bg-color">
+                <img src="./assets/theme-btn.png" alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -47,15 +51,21 @@
               <img src="assets/checkbox.png" alt="" />
             </div>
             <div>
-              <p>Text assigned</p>
-              <h1 class="text-[#00303C] text-2xl font-bold">05</h1>
+              <p>Task Assigned</p>
+              <h1
+                id="decrease-number"
+                class="product-number text-[#00303C] text-2xl font-bold"
+              >
+                6
+              </h1>
             </div>
           </div>
-          <div id="discover-btn"
+          <div
+            id="discover-btn"
             class="flex w-2/4 items-center gap-4 p-6 rounded-lg bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"
           >
             <img src="assets/board.png" alt="" />
-            <h1>Discover Something New Today!</h1>
+            <h1 class="text-[#FFF] text-xl font-medium">Discover Something <br>New Today!</h1>
           </div>
           <div
             class="flex w-1/4 gap-6 bg-[#F4F7FF] justify-center rounded-lg items-center"
@@ -64,10 +74,10 @@
               <img src="assets/calender.png" alt="" />
             </div>
             <div id="date-picker">
-              <!-- <p>Wed,</p>
+              <p>Wed,</p>
               <h2 class="text-2xl text-[#00303C] font-bold rounded-lg">
                 Jul 28 2025
-              </h2> -->
+              </h2>
             </div>
           </div>
         </div>
@@ -93,7 +103,7 @@
                   Fixed Mobile Button Issue
                 </h2>
                 <p
-                  class="bg-[#FFF]  inline-block px-6 py-4 rounded-md text-[#000]"
+                  class="bg-[#FFF] inline-block px-6 py-4 rounded-md text-[#000]"
                 >
                   Debug using Chrome DevTools, check for overlapping elements,
                   and ensure onClick works properly and ensure onClick works
@@ -104,7 +114,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn1"  class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn1"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -124,7 +137,7 @@
                   Add Dark Mode
                 </h2>
                 <p
-                  class="bg-[#FFF] inline-block px-6 py-5 rounded-md text-[#000] "
+                  class="bg-[#FFF] inline-block px-6 py-5 rounded-md text-[#000]"
                 >
                   Store the user's preference in localStorage, update CSS
                   variables dynamically, and apply a smooth transition effect.
@@ -135,7 +148,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn2" class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn2"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -166,7 +182,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn3" class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn3"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -197,7 +216,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn4" class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn4"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -228,7 +250,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn5" class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn5"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -260,7 +285,10 @@
                     <p class="text-[#00303C]">Deadline</p>
                     <h1 class="text-[#00303C] font-medium">21 March 2025</h1>
                   </div>
-                  <button id="card-btn6" class="btn btn-primary px-10 rounded-lg">
+                  <button
+                    id="card-btn6"
+                    class="btn btn-primary px-10 rounded-lg"
+                  >
                     Completed
                   </button>
                 </div>
@@ -286,7 +314,6 @@
         <hr class="border-dashed border-t-2 border-[#3752FD33]" />
       </section>
     </main>
-  
 
     <script src="js/assignment5.js"></script>
   </body>

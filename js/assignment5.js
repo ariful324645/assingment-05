@@ -1,3 +1,6 @@
+// decrease let -----
+// increase let +++++
+
 document
   .getElementById("discover-btn")
   .addEventListener("click", function (event) {
@@ -5,19 +8,35 @@ document
     window.location.href = "blog.html";
   });
 
-  function showDate () {
-    const realDate = new Date();
-    const currentDate= document.getElementById("date-picker");
-    // console.log(dateDiv)
-    currentDate.innerHTML = realDate.toDateString()
-  }
+function showDate() {
+  const realDate = new Date();
+  const currentDate = document.getElementById("date-picker");
+  currentDate.innerHTML = realDate.toDateString();
+}
 
-  showDate()
+showDate();
+
+//   // product-time
+//   const quantityElement=document.querySelectorAll(".product-number")
+//   // console.log(quantityElement);
+//   for(const number of quantityElement){
+//  document.getElementById()
+//   }
 
 document
   .getElementById("card-btn1")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+    
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
+  
     event.target.disabled = "true";
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
@@ -27,21 +46,41 @@ document
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock1").innerHTML = currentTime.toLocaleTimeString();
-    
+    document.getElementById("clock1").innerHTML =
+      currentTime.toLocaleTimeString();
+
     document
       .getElementById("clear-history")
       .addEventListener("click", function () {
         const history = document.getElementById("clear-history");
         document.getElementById("card-clear").remove();
       });
+
+   
   });
 //  card2
+
+
+let taskAssign = 6;
+let taskComplete = 23;
 document
   .getElementById("card-btn2")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+  
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+  
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
+    
+
     event.target.disabled = "true";
+
+
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
     newValue1.innerHTML = `
@@ -50,7 +89,8 @@ document
     activity.appendChild(newValue1);
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock2").innerHTML = currentTime.toLocaleTimeString();
+    document.getElementById("clock2").innerHTML =
+      currentTime.toLocaleTimeString();
 
     document
       .getElementById("clear-history")
@@ -64,6 +104,15 @@ document
   .getElementById("card-btn3")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+
+    
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
     event.target.disabled = "true";
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
@@ -72,7 +121,8 @@ document
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock3").innerHTML = currentTime.toLocaleTimeString();
+    document.getElementById("clock3").innerHTML =
+      currentTime.toLocaleTimeString();
 
     document
       .getElementById("clear-history")
@@ -86,6 +136,15 @@ document
   .getElementById("card-btn4")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+    
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
+
     event.target.disabled = "true";
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
@@ -94,7 +153,8 @@ document
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock4").innerHTML = currentTime.toLocaleTimeString();
+    document.getElementById("clock4").innerHTML =
+      currentTime.toLocaleTimeString();
 
     document
       .getElementById("clear-history")
@@ -108,6 +168,15 @@ document
   .getElementById("card-btn5")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+    
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
+
     event.target.disabled = "true";
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
@@ -116,7 +185,8 @@ document
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock5").innerHTML = currentTime.toLocaleTimeString();
+    document.getElementById("clock5").innerHTML =
+      currentTime.toLocaleTimeString();
     document
       .getElementById("clear-history")
       .addEventListener("click", function () {
@@ -129,6 +199,15 @@ document
   .getElementById("card-btn6")
   .addEventListener("click", function (event) {
     alert("Board updated successfully");
+    
+    taskAssign--;
+    taskComplete++;
+    document.getElementById("decrease-number").innerText=taskAssign;
+    document.getElementById("increase-number").innerText=taskComplete;
+    if(taskAssign===0){
+      alert("congrates!!! You have completed all the current task")
+    }
+
     event.target.disabled = "true";
     const activity = document.getElementById("activity-log");
     const newValue1 = document.createElement("div");
@@ -137,7 +216,8 @@ document
 `;
     activity.appendChild(newValue1);
     let currentTime = new Date();
-    document.getElementById("clock6").innerHTML = currentTime.toLocaleTimeString();
+    document.getElementById("clock6").innerHTML =
+      currentTime.toLocaleTimeString();
     document
       .getElementById("clear-history")
       .addEventListener("click", function () {
@@ -145,3 +225,13 @@ document
         document.getElementById("card-clear").remove();
       });
   });
+
+let index= 0;
+
+document.getElementById("bg-color").addEventListener("click", function () {
+  const colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+
+  document.body.style.backgroundColor = colors[index];
+  index= (index + 1) % colors.length;
+});
+
