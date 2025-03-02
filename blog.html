@@ -11,58 +11,98 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F4F7FF] ">
-    <header class="w-[1400px] mx-auto mb-5 ">
-        <div class="navbar bg-[#FFF] p-4 rounded-xl">
-            <div class="flex-1">
-              <div class="flex items-center">
-                <img class="w-8 h-8" src="assets/logo.png" alt="" />
-                <a class="btn btn-ghost text-2xl"
-                  >Dev<span class="font-bold">Board</span></a
-                >
-              </div>
-            </div>
-      
-            <div>
-              <button id="btn-blog" class="btn btn-primary px-10 rounded-lg">Back to Desk</button>
-            </div>
+  <body class="bg-[#F4F7FF]">
+    <header class="w-[1400px] mx-auto mb-5">
+      <div class="navbar bg-[#FFF] p-4 rounded-xl">
+        <div class="flex-1">
+          <div class="flex items-center">
+            <img class="w-8 h-8" src="assets/logo.png" alt="" />
+            <a class="btn btn-ghost text-2xl"
+              >Dev<span class="font-bold">Board</span></a
+            >
           </div>
+        </div>
+
+        <div>
+          <button id="btn-blog" class="btn btn-primary px-10 rounded-lg">
+            Back to Desk
+          </button>
+        </div>
+      </div>
     </header>
 
     <main class="w-[1400px] mx-auto space-y-5">
-        <h1 class="font-bold text-[#00303C] text-2xl text-center">Blog</h1>
-        <div class="bg-base-100 border  space-y-2 border-base-300">
+      <h1 class="font-bold text-[#00303C] text-2xl text-center">Blog</h1>
+      <div class="bg-base-100 border space-y-2 border-base-300">
+        <div class="text-2xl p-4 font-bold text-[#00303C]">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
+        <div class="p-4">
+          The getElementById("id") indicate single element in unique id . The
+          getElementsByClassName("class") indicate all same class in html file,
+          getElementsByTagName("tag") indicate tag name in inner
+          Text.querySelector("selector") selects the first matching
+          element.querySelectorAll("selector") select NodeList of all matching
+          elements
+        </div>
+      </div>
+      <div class="bg-base-100 border space-y-2 border-base-300">
+        <div class="text-2xl p-4 font-bold text-[#00303C]">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
+        <div class="p-4">
+        InnerHTML
+returns or sets the HTML including tags and child elements. innerText
+return or sets the visible text element.textContent
+return or sets the full text content inside an element, including hidden elements.
+        </div>
+      </div>
+      <div class="bg-base-100 border space-y-2 border-base-300">
+        <div class="text-2xl p-4 font-bold text-[#00303C]">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
+        <div class="p-4">
+          Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern ,handle events at a higher level in the DOM tree other than the level where the event was first received.
+        </div>
+      </div>
+      <div class="bg-base-100 border space-y-2 border-base-300">
+        <div class="text-2xl p-4 font-bold text-[#00303C]">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
+        <div class="p-4">
+          Event bubbling  is a mechanism where an event triggered on a child element propagates in the DOM. It allows parent elements to respond to events triggered by their child elements.
+        </div>
+      </div>
+      <div class="bg-base-100 border space-y-2 border-base-300">
+        <div class="text-2xl p-4 font-bold text-[#00303C]">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
+        <div class="p-4">
+          createElement:
+          <br>
+          const newValue = document.createElement("p"); 
+            newValue.innerText = "This is a new paragraph."; 
+            <br>
+            add Element:
+            <br>
+            document.body.appendChild(newValue);
+            <br>
+            remove Element:
+            <br>
+            const parentElement = document.getElementById("container");
+const childElement = document.getElementById("childElement");
+parentElement.removeChildElement(child);
             
-            <div class="text-2xl p-4 font-bold text-[#00303C]">Question-1: What are the different ways to select an element in the DOM?</div>
-            <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
-            <div class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, iusto ratione totam minima repellat et neque hic praesentium. Ipsa, quis!  Click the "Sign Up" button in the top right corner and follow the registration </process></div>
-          </div>
-          <div class="bg-base-100 border  space-y-2 border-base-300">
-            
-            <div class="text-2xl p-4 font-bold text-[#00303C]">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
-            <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
-            <div class="p-4">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-          </div>
-          <div class="bg-base-100 border  space-y-2 border-base-300">
-            
-            <div class="text-2xl p-4 font-bold text-[#00303C]">Question-3: What is event delegation in the DOM?</div>
-            <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
-            <div class="p-4">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-          </div>
-          <div class="bg-base-100 border  space-y-2 border-base-300">
-            
-            <div class="text-2xl p-4 font-bold text-[#00303C]">Question-4: What is event bubbling in the DOM?</div>
-            <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
-            <div class="p-4">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-          </div>
-          <div class="bg-base-100 border  space-y-2 border-base-300">
-            
-            <div class="text-2xl p-4 font-bold text-[#00303C]">Question-5: How do you create, add, and remove elements using JavaScript?</div>
-            <hr class="border-dashed border-t-2 border-[#3752FD33] w-full" />
-            <div class="p-4">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-          </div>
-    
-       
+        </div>
+      </div>
     </main>
     <script src="./js/blog.js"></script>
   </body>
